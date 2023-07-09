@@ -1,0 +1,33 @@
+name: Server CI/CD
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.102
+
+      - name: Install dependencies
+        run: cd server && dotnet restore
+
+      - name: Run tests
+        run: cd server && dotnet test
+
+      - name: Build
+        run: cd server && dotnet build --configuration Release --no-restore
+
+      - name: Deploy to GCP
+        run: |
+          cd server
+          # Add your commands to deploy to GCP here. You may need to use gcloud CLI or other deployment tools.
