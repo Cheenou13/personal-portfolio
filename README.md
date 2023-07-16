@@ -46,6 +46,7 @@ Explain how to run the automated tests for this system.
 - [vitejs](https://vitejs.dev/) - Dependency Management
 - [vuejs](https://vuejs.org/) - UI Framework
 - [tailwindcss](https://tailwindcss.com/) - Used to generate RSS Feeds
+- [Kevin Cudennec Portfolio template] (https://www.kc.studio/#serv) - template for UI/UX design
 
 ## Contributing
 
