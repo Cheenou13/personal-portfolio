@@ -1,19 +1,27 @@
 <template>
-    <div>
-       <h1>this is a home page</h1>
-    </div>
+    <!-- <div> -->
+        <Header/>
+    <!-- </div> -->
 </template>
 
 <script>
-export default {
-    setup () {
-        
+    import Header from "../components/homePonents/Header.vue";
+    export default {
+        name: "Home",
+        components: {
+            Header
+        },
+        data () {
+            return {}
+        },
+        setup () {
+            
 
-        return {}
+            return {}
+        }
     }
-}
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
