@@ -3,7 +3,7 @@
         <div class="left-header w-[50%] flex flex-row">
             <div class="logo">Logo</div>
             <div class="search">linkedIn</div>
-            div
+            
         </div>
         <div class="right-header w-[50%] bg-slate-950 ">Right Header</div>
     </section>
