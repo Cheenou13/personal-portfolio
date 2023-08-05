@@ -1,7 +1,12 @@
 <template>
-    <div class="bg-black h-[530px]">
-        gd
-    </div>
+    <section>
+        <div class="left-header w-[50%] flex flex-row">
+            <div class="logo">Logo</div>
+            <div class="search">linkedIn</div>
+            div
+        </div>
+        <div class="right-header w-[50%] bg-slate-950 ">Right Header</div>
+    </section>
 </template>
 
 <script>
@@ -11,5 +16,15 @@
 </script>
 
 <style  scoped>
-
+    section {
+        background-color: #f1f1f1;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        height: 54px;
+        padding: 10px;
+        /* width: 100%; */
+        /* font-size: 30px; */
+        margin: 10px;
+    }
 </style>

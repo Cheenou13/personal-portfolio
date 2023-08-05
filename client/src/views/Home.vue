@@ -1,7 +1,7 @@
 <template>
-    <!-- <div> -->
+    <div class="bg-red-200 h-screen relative overflow-auto">
         <Header/>
-    <!-- </div> -->
+    </div>
 </template>
 
 <script>
