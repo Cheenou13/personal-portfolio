@@ -1,15 +1,15 @@
 <template>
     <div class="h-screen relative overflow-auto">
-        <Header/>
+        <NavBar/>
     </div>
 </template>
 
 <script>
-    import Header from "../components/homePonents/Header.vue";
+    import NavBar from "../components/homePonents/NavBar.vue";
     export default {
         name: "Home",
         components: {
-            Header
+            NavBar
         },
         data () {
             return {}
