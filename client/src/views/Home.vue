@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen relative overflow-auto">
+    <div class="content-body">
         <NavBar/>
     </div>
 </template>
@@ -23,5 +23,10 @@
 </script>
 
 <style scoped>
-
+    .content-body {
+        min-height: 100%;   
+        width: auto;
+        /* overflow: hidden; */
+        position: relative;
+    }
 </style>
