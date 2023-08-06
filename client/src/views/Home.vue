@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-red-200 h-screen relative overflow-auto">
+    <div class="h-screen relative overflow-auto">
         <Header/>
     </div>
 </template>

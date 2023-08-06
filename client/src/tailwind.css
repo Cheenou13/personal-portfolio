@@ -8,10 +8,12 @@
     /* background-color: aqua; */
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    
 }
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   scroll-behavior: smooth;
-  /* background-color: #343541; */  
+  background-color: #121120;  
 }
