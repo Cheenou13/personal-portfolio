@@ -1,15 +1,18 @@
 <template>
     <div class="content-body">
         <NavBar/>
+
     </div>
 </template>
 
 <script>
-    import NavBar from "../components/homePonents/NavBar.vue";
+    import NavBar from "../components/homeComponents/NavBar.vue";
+    import LandingPage from "../components/homeComponents/LandingPage.vue";
     export default {
         name: "Home",
         components: {
-            NavBar
+            NavBar,
+
         },
         data () {
             return {}
