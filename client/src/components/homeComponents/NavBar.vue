@@ -10,8 +10,18 @@
             <!-- hfh -->
         </nav>
         <!-- </div> -->
-        <div class=" bg-slate-400 h-full w-full text-white z-20">
+        <div class=" h-full w-full text-white z-20">
             content-body
+            <!-- <lottie-player
+                src="D:\Pesonal Portfolio\personal-portfolio\client\src\assets\background-animation.zip"  
+                speed="1" 
+                loop 
+                background="rgba(0, 85, 255, 0)"
+                direction="1"
+                autoplay="true"
+                style="height: 100%; width: 100%;">
+            </lottie-player> -->
+
         </div>
         <!-- </div>     -->
     </section>
@@ -19,8 +29,17 @@
 </template>
 
 <script>
+    
     export default {
-        name: "NavBar"
+        name: "NavBar",
+        setup() {
+    
+            },
+        data() {
+            return {
+
+            }
+        },
     }
 </script>
 
