@@ -6,10 +6,6 @@ Building a personal portfolio generally showcases skills, projects, previous and
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
 ### Installing
 
 A step-by-step series of examples that tell you how to get a development environment running.
@@ -17,13 +13,13 @@ A step-by-step series of examples that tell you how to get a development environ
 First, clone the repository: git@github.com:Cheenou13/personal-portfolio.git
 
 ```
-Second, cd into server directory: 
+Second, cd into the server directory: 
 cd server
 dotnet run
 
 this will start the server side of the application
 
-next, cd into client directory: 
+next, cd into the client directory: 
 cd client
 npm install
 npm start
@@ -46,17 +42,14 @@ Explain how to run the automated tests for this system.
 - [vitejs](https://vitejs.dev/) - Dependency Management
 - [vuejs](https://vuejs.org/) - UI Framework
 - [tailwindcss](https://tailwindcss.com/) - Used to generate RSS Feeds
-- [Kevin Cudennec Portfolio template] (https://www.kc.studio/#serv) - template for UI/UX design
+- [Kevin Cudennec Portfolio template] (https://www.kc.studio/#serv) - this design is by Kevin and all the credits for the design go to Kevin
 
-## Contributing
-
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/OWNER/REPOSITORY/blob/main/CONTRIBUTING.md) can be a big plus. 
 
 ## Authors
 
 - Cheenou Xiong - Initial work - [cheenou13](https://github.com/cheenou13)
 
-See also the list of [contributors](https://github.com/OWNER/REPOSITORY/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Cheenou13/personal-portfolio/graphs/contributors) who participated in this project.
 
 ## License
 
@@ -65,6 +58,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- If you are planning to use this repo, please give credits to the owner (Cheenou Xiong) or copyrights will be issued for misused
+- The purpose and aspiration of this project are to show my skills, works, and my passion for creating high-quality codes
 
