@@ -10,17 +10,11 @@
             <!-- hfh -->
         </nav>
         <!-- </div> -->
-        <div class=" h-full w-full text-white z-20">
-            content-body
-            <!-- <lottie-player
-                src="D:\Pesonal Portfolio\personal-portfolio\client\src\assets\background-animation.zip"  
-                speed="1" 
-                loop 
-                background="rgba(0, 85, 255, 0)"
-                direction="1"
-                autoplay="true"
-                style="height: 100%; width: 100%;">
-            </lottie-player> -->
+        <div class="dotlottie-container h-full w-full text-white z-20">
+            <dotlottie-player 
+                src="https://framerusercontent.com/modules/assets/6Hwubvigct3R3CXW9AZ1cvnVgrs~HSi6JbhLs8FDE1I8AFixXTRDU41ZWt4z5-iz0-4-2gM.zip" 
+                autoplay="true" loop="" background="rgba(0, 85, 255, 0)" speed="1" direction="1" style="height: 100%; width: 100%;">
+            </dotlottie-player>
 
         </div>
         <!-- </div>     -->
@@ -29,14 +23,18 @@
 </template>
 
 <script>
-    
+
     export default {
         name: "NavBar",
+        components: {
+
+        },
         setup() {
     
             },
         data() {
             return {
+                animation: "",
 
             }
         },
@@ -45,12 +43,8 @@
 
 <style  scoped>
     section {
-        /* height: 100vh; */
         display: flex;
-        /* justify-content: center; */
         flex-direction: column;
-        /* background-color: #f1f1f1; */
-        /* position: absolute; */
         width: 100%;
         align-items: center;
         height: 100vh;
@@ -95,5 +89,14 @@
         margin-top: 1.5em;
         font-weight: 700;
         font-size: 14px;
+    }
+    .dotlottie-container {
+        opacity: 0.1;
+        transform: perspective(1200px);
+        position: absolute;
+        height: 7%;
+        left: 0;
+        right: 0;
+        top: 490px;
     }
 </style>
