@@ -2,7 +2,7 @@
     <section>
         <nav>
             <div class="nav-bar">
-                <div style="display: contents; ">
+                <!-- <div style="display: contents; ">
                     <div class="style-ref-0">
                         <a class="works" href="">
                             <div class="style-ref-1">
@@ -61,6 +61,29 @@
                                 </div>
                             </div>
                         </a>
+                        <div class="contact-container">
+                            <div class="style-contact-1">
+                                <div style="display: contents;">
+                                    <a href="" class="contact-me ">
+                                        <div class="style-contact-2">
+                                            <p class="p-0 m-0 text-slate-200">Contact Me</p>
+                                        </div>
+                                        <div class="hover-bg-color"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="contents w-full h-full">
+                    <div class="flex gap-2">
+                        <a href="" class=" works text-white"> 
+                            <p class="text-white py-3 px-3 rounded-md">
+                                Works
+                            </p>
+                        </a>
+                        <a href="" class=" experiences text-white"> Experience</a>
+                        <a href="" class=" skills text-white"> Skills</a>
                         <div class="contact-container">
                             <div class="style-contact-1">
                                 <div style="display: contents;">
@@ -306,11 +329,14 @@
         white-space: pre;
         position: absolute;
     }
-    .style-ref-3:hover {
+    .works p {
+        opacity: 0.5;
+    }
+    .works:hover p {
         background-color: rgb(32, 31, 48);
 
     }
-    .style-ref-3:hover .style-ref-4 {
-        opacity: 1;
+    .works:hover p{
+        opacity: 0.8;
     }
 </style>
