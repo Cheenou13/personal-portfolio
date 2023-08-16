@@ -1,111 +1,51 @@
 <template>
     <section>
-        <nav>
-            <div class="nav-bar">
-                <!-- <div style="display: contents; ">
-                    <div class="style-ref-0">
-                        <a class="works" href="">
-                            <div class="style-ref-1">
-                                <div class="contents">
-                                    <div class="style-ref-2">
-                                        <div class="style-ref-3">
-                                            <div class="style-ref-4">
-                                                <div class="contents">
-                                                    <div class="style-ref-5">
-                                                        <div class="style-ref-6">
-                                                            <p class="text-styling text-white">Works</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="experiences" href="">
-                            <div class="style-ref-1">
-                                <div class="contents">
-                                    <div class="style-ref-2">
-                                        <div class="style-ref-3">
-                                            <div class="style-ref-4">
-                                                <div class="contents">
-                                                    <div class="style-ref-5">
-                                                        <div class="style-ref-6">
-                                                            <p class="text-styling text-white">Experiences</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="skills" href="">
-                            <div class="style-ref-1">
-                                <div class="contents">
-                                    <div class="style-ref-2">
-                                        <div class="style-ref-3">
-                                            <div class="style-ref-4">
-                                                <div class="contents">
-                                                    <div class="style-ref-5">
-                                                        <div class="style-ref-6">
-                                                            <p class="text-styling text-white">Skills</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="contact-container">
-                            <div class="style-contact-1">
-                                <div style="display: contents;">
-                                    <a href="" class="contact-me ">
-                                        <div class="style-contact-2">
-                                            <p class="p-0 m-0 text-slate-200">Contact Me</p>
-                                        </div>
-                                        <div class="hover-bg-color"></div>
+        <header >
+            <nav>
+                <div class="nav-bar">
+                    <div class="contents w-full h-full">
+                        <div class="absolute h-[54px] w-[50%] right-0">
+                            <div class="contents">
+                                <div class="flex flex-row h-full justify-end items-center gap-4">
+                                    <a href="" class="works">
+                                        <p class=" py-3 px-4 rounded-lg">
+                                            Works
+                                        </p>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="contents w-full h-full">
-                    <div class="flex gap-2">
-                        <a href="" class=" works text-white"> 
-                            <p class="text-white py-3 px-3 rounded-md">
-                                Works
-                            </p>
-                        </a>
-                        <a href="" class=" experiences text-white"> Experience</a>
-                        <a href="" class=" skills text-white"> Skills</a>
-                        <div class="contact-container">
-                            <div class="style-contact-1">
-                                <div style="display: contents;">
-                                    <a href="" class="contact-me ">
-                                        <div class="style-contact-2">
-                                            <p class="p-0 m-0 text-slate-200">Contact Me</p>
-                                        </div>
-                                        <div class="hover-bg-color"></div>
+                                    <a href="" class=" experiences">
+                                        <p class="py-3 px-4 rounded-lg ">
+                                            Experience
+                                        </p>
                                     </a>
+                                    <a href="" class="skills">
+                                        <p class="py-3 px-6 rounded-lg ">
+                                            Skills
+                                        </p>
+                                    </a>
+                                    <div class="contact-container">
+                                        <div class="h-[51px]">
+                                            <div class="contents">
+                                                <a href="" class="contact-me ">
+                                                    <div class=" flex outline-none flex-col whitespace-pre w-full">
+                                                        <span class="p-0 m-0 text-center">Contact Me</span>
+                                                    </div>
+                                                    <div class="hover-bg-color"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <div class="dotlottie-container h-full w-full text-white z-20">
             <dotlottie-player 
                 src="https://framerusercontent.com/modules/assets/6Hwubvigct3R3CXW9AZ1cvnVgrs~HSi6JbhLs8FDE1I8AFixXTRDU41ZWt4z5-iz0-4-2gM.zip" 
                 autoplay="true" loop="" background="rgba(0, 85, 255, 0)" speed="1" direction="1" style="height: 100%; width: 100%;">
             </dotlottie-player>
-
         </div>
     </section>
 
@@ -131,69 +71,40 @@
 </script>
 
 <style  scoped>
-    .style-contact-1 {
-        opacity: 1;
-        height: 51px;
-        width: 170px;
-        left: calc(50.256% - 170px/2);
-        top: calc(49.4382% - 51px/2);
-        position: absolute;
-    }
-    .style-contact-2 {
-        outline: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        color: rgb(245, 245, 245);
-        opacity: 0.9;
-        transform: translate(-50%, -50%);
-        height: auto;
-        width: auto;
-        left: 50%;
-        top: 49%;
-        position: absolute;
-        white-space: pre;
-    }
     .contact-container {
         opacity: 1;
         bottom: -17px;
         overflow: visible;
-        position: absolute;
+        color: rgb(245, 245, 245); 
         right: -14px;
         top: -18px;
-        width: 205px;
+        width: 186px;
     }
     section {
-        /* display: flex; */
-        /* flex-direction: column; */
         position: relative;
         width: 100%;
-        /* align-items: center; */
         height: 100vh;
         margin: 0 auto;
-        /* padding: 0 22em; */
-
     }
-    .works  {
-        /* background-color: aqua; */
+    .works  { 
         opacity: 1;
         height: 39px;
         overflow: visible;
-        position: absolute;
+        /* position: absolute; */
         right: 376px;
         top:calc(50.00000000000002% - 39px / 2);
         width: 70px;
     }
     .experiences {
         height: 39px;
-        position: absolute;
+        /* position: absolute; */
         right: 266px;
         top: calc(50% - 39px/2);
         width: 106px;
     }
     .skills {
         height: 39px;
-        position: absolute;
+        /* position: absolute; */
         right: 180px;
         top: calc(50% - 39px/2);
         width: 82px;
@@ -205,6 +116,7 @@
         background: none 0% 0% / auto repeat scroll padding-box border-box rgba(130, 130, 138, 0.2);
         border-radius: 8px;
         position: relative;
+        transition: background 0.4s cubic-bezier(0.25, 0.1, 0.52, 1.04) 0.2s;
     }
 
     .contact-me:hover {
@@ -259,84 +171,17 @@
         display: flex;
         align-items: center;
     }
-    .style-ref-0 {
-        /* background-color: aliceblue; */
-        display: flex;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        overflow: visible;
-        position: relative;
-    }
-    .style-ref-1 {
-        opacity: 1;
-        inset: -2px 0 -1px;
-        position: absolute;
-    }
-    .style-ref-2 {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-        overflow: hidden;
-        gap: 10px;
-        padding: 0;
-        position: relative;
-        opacity: 1;
-        border-radius: 4px;
-        will-change: transform;
-    }
-    .style-ref-3 {
-        background: rgba(0, 0, 0, 0);
-        opacity: 1;
-        border-radius: 8px;
-        flex: 1 0 0px;
-        height: 42px;
-        width: 1px;
-        overflow: visible;
-        position: relative;
-    }
-    .style-ref-4{
-        opacity:0.5;
-        height: 18px;
-        width: 42px;
-        left: calc(50% - 42px/2);
-        top: calc(50% - 18px/2);
-        position: absolute;
-    }
-    .style-ref-5 {
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        overflow: visible;
-        position: relative;
-    }
-    .style-ref-6 {
-        height: auto;
-        width: auto;
-        outline: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        color: rgb(245, 245, 245);
-        opacity: 0.8;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 47%;
-        white-space: pre;
-        position: absolute;
-    }
-    .works p {
+
+    p {
+        color:rgb(245, 245, 245);
         opacity: 0.5;
+        transition: background-color 0.4s ease 0s, opacity 0.4s ease 0s;
     }
-    .works:hover p {
-        background-color: rgb(32, 31, 48);
+    .works:hover p,  .experiences:hover p, .skills:hover p {
+        opacity: 0.8;
+        background-color: rgb(46, 45, 63);
 
     }
-    .works:hover p{
-        opacity: 0.8;
-    }
+
+
 </style>
