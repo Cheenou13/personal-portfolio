@@ -49,6 +49,12 @@
 </script>
 
 <style  scoped>
+    section {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+    }
     nav {
         opacity: 1;
         height: 771px;
