@@ -4,17 +4,18 @@
             <div class="absolute h-[54px] w-[50%] right-0">
                 <div class="contents">
                     <div class="flex flex-row h-full justify-end items-center gap-4">
-                        <a href="" class="works">
+
+                        <a :href="'#'+works" class="works">
                             <p class=" py-3 px-4 rounded-lg">
                                 Works
                             </p>
                         </a>
-                        <a href="" class=" experiences">
+                        <a :href="'#'+experience" class=" experiences">
                             <p class="py-3 px-4 rounded-lg ">
                                 Experience
                             </p>
                         </a>
-                        <a href="" class="skills">
+                        <a :href="'#'+skills" class="skills">
                             <p class="py-3 px-6 rounded-lg ">
                                 Skills
                             </p>
@@ -61,6 +62,11 @@
 <script>
 export default {
     name: "NavBar",
+    props: {
+        works: String,
+        experience: String,
+        skills: String,
+    },
     setup () {
         
 
