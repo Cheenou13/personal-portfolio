@@ -1,13 +1,13 @@
 <template>
     <div class="content-body">
-        <LandingPage/>
-        <div id="works" class=" h-screen w-full bg-slate-50">
+        <LandingPage :skills="skills" :works="works" :experience="experience"/>
+        <div :id="works" class=" h-screen w-full bg-slate-50">
             works
         </div>
-        <div id="experience" class="h-screen w-full bg-violet-400">
+        <div :id="experience" class="h-screen w-full bg-violet-400">
             experience
         </div>
-        <div id="skills" class="h-screen w-full bg-purple-400">
+        <div :id="skills" class="h-screen w-full bg-purple-400">
             skills
         </div>
     </div>
@@ -21,7 +21,11 @@
             LandingPage,
         },
         data () {
-            return {}
+            return {
+                works: 'worksRef',
+                experience: 'experienceRef',
+                skills: 'skillsRef',
+            }
         },
         setup () {
             

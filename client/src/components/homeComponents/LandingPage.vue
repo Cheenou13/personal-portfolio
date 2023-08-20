@@ -2,7 +2,7 @@
     <section>
         <header >
             <nav>
-                <NavBar/>
+                <NavBar :skills="skills" :works="works" :experience="experience"/>
                 <MainContent/>
             </nav>
         </header>
@@ -32,6 +32,11 @@
     import NavBar from './NavBar.vue';
     export default {
         name: "LandingPage",
+        props: {
+            skills: String,
+            works: String,
+            experience: String,
+        },
         components: {
             MainContent,
             NavBar
