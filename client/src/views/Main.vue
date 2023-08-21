@@ -1,24 +1,24 @@
 <template>
     <div class="content-body">
         <LandingPage :skills="skills" :works="works" :experience="experience"/>
-        <div :id="works" class=" h-screen w-full bg-slate-50">
-            works
-        </div>
-        <div :id="experience" class="h-screen w-full bg-violet-400">
-            experience
-        </div>
-        <div :id="skills" class="h-screen w-full bg-purple-400">
-            skills
-        </div>
-    </div>
+        <MainWorks :id="works"/>
+        <MainExp :id="experience"/>
+        <MainSkills :id="skills"/>
+    </div>  
 </template>
 
 <script>
     import LandingPage from "../components/homeComponents/LandingPage.vue";
+    import MainExp from "../components/expComponents/MainExp.vue";
+    import MainWorks from "../components/worksComponents/MainWorks.vue";
+    import MainSkills from "../components/skillsComponents/MainSkills.vue";
     export default {
         name: "Main",
         components: {
             LandingPage,
+            MainExp,
+            MainWorks,
+            MainSkills
         },
         data () {
             return {
@@ -39,7 +39,7 @@
     .content-body {
         min-height: 100%;   
         width: auto;
-        /* overflow: hidden; */
+        overflow: hidden;
         position: relative;
     }
 </style>
