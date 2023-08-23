@@ -6,15 +6,15 @@
                 <MainContent/>
             </nav>
         </header>
-        <div class="dotlottie-container h-full w-full text-white z-20">
-            <dotlottie-player 
-                src="https://framerusercontent.com/modules/assets/6Hwubvigct3R3CXW9AZ1cvnVgrs~HSi6JbhLs8FDE1I8AFixXTRDU41ZWt4z5-iz0-4-2gM.zip" 
-                autoplay="true" loop="" background="rgba(0, 85, 255, 0)" speed="1" direction="1" style="height: 100%; width: 100%;">
-            </dotlottie-player>
-        </div>
+
         <bgTheme/>
     </section>
-
+    <div class="dotlottie-container h-full w-full text-white z-20">
+        <dotlottie-player 
+            src="https://framerusercontent.com/modules/assets/6Hwubvigct3R3CXW9AZ1cvnVgrs~HSi6JbhLs8FDE1I8AFixXTRDU41ZWt4z5-iz0-4-2gM.zip" 
+            autoplay="true" loop="" background="rgba(0, 85, 255, 0)" speed="1" direction="1" style="height: 100%; width: 100%;">
+        </dotlottie-player>
+    </div>
 </template>
 
 <script>
@@ -46,7 +46,6 @@
 </script>
 
 <style  scoped>
-
     section {
         opacity: 1;
         height: 771px;
