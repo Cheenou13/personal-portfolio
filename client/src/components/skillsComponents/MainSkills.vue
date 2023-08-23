@@ -1,6 +1,5 @@
 <template>
     <div :id="skills" class=" skills-wrapper ">
-        Main skills
         <bgTheme />
     </div>
 </template>
