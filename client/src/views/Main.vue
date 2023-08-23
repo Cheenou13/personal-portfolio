@@ -1,14 +1,16 @@
 <template>
-    <div class="content-body">
-        <LandingPage :skills="skills" :works="works" :experience="experience"/>
-        <MainWorks :id="works"/>
-        <MainExp :id="experience"/>
-        <MainSkills :id="skills"/>
-        <transition name="dropdown">
-            <FixedNavBar :showBar="showFixedNavBar" :skills="skills" :works="works" :experience="experience"/>
-        </transition> 
-            
-    </div>  
+
+    <div class="contents">
+        <div class="content-body">
+            <LandingPage :skills="skills" :works="works" :experience="experience"/>
+            <MainWorks :works="works"/>
+            <MainExp :experience="experience"/>
+            <MainSkills :skills="skills"/>
+            <transition name="dropdown">
+                <FixedNavBar :showBar="showFixedNavBar" :skills="skills" :works="works" :experience="experience"/>
+            </transition> 
+        </div> 
+    </div>
     
 </template>
 
@@ -58,7 +60,8 @@
 
 <style scoped>
     .content-body {
-        min-height: 100%;   
+        min-height: 100%;
+        height: 5897px;
         width: auto;
         overflow: hidden;
         position: relative;

@@ -1,8 +1,8 @@
 <template>
-        <div :id="skills" class=" skills-wrapper ">
-            Main skills
-            <bgTheme />
-        </div>
+    <div :id="skills" class=" skills-wrapper ">
+        Main skills
+        <bgTheme />
+    </div>
 </template>
 
 <script>
@@ -27,7 +27,8 @@
 
     .skills-wrapper {
         height: 100vh;
-        width: 100vw;
+        overflow: visible;
+        width: auto;
         position: relative;
     }
 

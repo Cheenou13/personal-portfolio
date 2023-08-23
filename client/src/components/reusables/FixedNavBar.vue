@@ -207,6 +207,7 @@ export default {
         /* background-color: white; */
     }
     .scroll-nav-container {
+        z-index: 21;
         font-weight: 700;
         font-size: 14px;
         color: rgb(101 100 109);

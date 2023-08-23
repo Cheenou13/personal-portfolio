@@ -26,9 +26,11 @@
 <style scoped>
 
     .experience-wrapper {
-        height: 100vh;
-        width: 100vw;
-        position: relative;
+        height: 471px;
+        width: 1110px;
+        left: calc(50% - 1110px/2);
+        top: 2606px;
+        position: absolute;
     }
 
 </style>
