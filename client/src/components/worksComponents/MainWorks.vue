@@ -10,12 +10,17 @@
         </div>
     </div>
     <div :id="works" class="work-archor"></div>
+    <Employers/>
     <!-- </section> -->
 </template>
 
 <script>
+    import Employers from './Employers.vue';
     export default {
         name: "MainWorks",
+        components: {
+            Employers
+        },
         props: {
             works: String,
         },
@@ -81,7 +86,7 @@
         height: auto;
         width: 438px;
         left: 50%;
-        bottom: 1px;
+        bottom: 16px;
         white-space: pre-wrap;
         word-break: break-word;
         word-wrap: break-word;
