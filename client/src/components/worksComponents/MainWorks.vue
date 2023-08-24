@@ -1,5 +1,4 @@
 <template>
-    <!-- <section> -->
     <div class="years-exp-container">
         <div class="year-exp">
             <p class="years-contents">Over two years, I've designed and developed robust full-stack C# and Vue.js applications, 
@@ -11,15 +10,17 @@
     </div>
     <div :id="works" class="work-archor"></div>
     <Employers/>
-    <!-- </section> -->
+    <Projects/>
 </template>
 
 <script>
     import Employers from './Employers.vue';
+    import Projects from './Projects.vue';
     export default {
         name: "MainWorks",
         components: {
-            Employers
+            Employers,
+            Projects
         },
         props: {
             works: String,
