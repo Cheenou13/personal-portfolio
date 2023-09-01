@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
     .projects-wrapper {
         opacity: 1;
         transform: perspective(1200px);
@@ -55,6 +55,7 @@ export default {
         width: 100%;
         overflow: hidden;
         position: relative;
+        transition: transform 0.3s ease 0s;
 
     }
     .contents-container {
@@ -66,4 +67,13 @@ export default {
         overflow: visible;
         position: relative;
     }
+    .items-container:hover {
+
+        transform: scale(1.02) rotate(0deg) translateZ(0px);
+        
+    }
+    .items-container:hover .github-link {
+        color: rgba(0, 103, 246, 1);
+    }
+
 </style>

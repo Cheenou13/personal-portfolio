@@ -15,7 +15,7 @@
         <p class="project-title">3D Manufacturing Lines</p>
     </div>
     <div class="project-description">
-        <p>Three.js 3D rendering</p>
+        <a class="github-link" href="https://github.com/Cheenou13/3D-rendering" target="_blank">Github</a>
     </div>
     <div class="logo-container">
         <div class=" pointer-events-none user-select-none top-0 left-0 right-0 bottom-0" style="border-radius: inherit;">
@@ -138,4 +138,5 @@ export default {
         color: rgb(245, 245, 245);
         font-size: calc(var(--framer-font-size, 16px) * var(--framer-font-size-scale, 1));
     }
+
 </style>
