@@ -38,7 +38,7 @@
             <div class="absolute h-[54px] w-[50%] left-0 ">
 
                 <div class="contents">
-                    <div class="flex gap-4 h-full w-full opacity-100 overflow-hidden relative">
+                    <div class="flex justify-start gap-4 h-full w-full opacity-100 overflow-hidden relative">
                         <div class="social-media-wrapper-linkedin">
                             <div class="contents">
                                 <a href="https://www.linkedin.com/in/cheenou-xiong-0a4639107/" target="_blank">
@@ -183,7 +183,7 @@ export default {
         top: 0px;
         /* left: calc(49.387755102040835% - 48px / 2); */
         width: 48px;
-        position: absolute;
+        /* position: absolute; */
     }
     .social-media-wrapper-linkedin a {
         background-color: rgba(18, 17, 32, 0);
@@ -198,21 +198,25 @@ export default {
     }
     .social-media-wrapper-github {
         opacity: 1;
-        bottom: 0px;
-        top: 0px;
-        left: calc(49.387755102040835% - 578px / 2);
+        /* bottom: 0px;
+        top: 0px; */
+        /* left: calc(49.387755102040835% - 578px / 2); */
         width: 48px;
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .svg-container-github {
         image-rendering: pixelated;
         opacity: 0.5;
         height: 22px;
         width: 22px;
-        left: calc(50% - 22px/2);
-        top: calc(50% - 22px/2);
-        position: absolute;
-        /* background-color: white; */
+        /* left: calc(50% - 22px/2);
+        top: calc(50% - 22px/2); */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .svg-container {
         image-rendering: pixelated;
