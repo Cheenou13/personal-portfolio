@@ -7,7 +7,7 @@
             </nav>
         </header>
 
-        <bgTheme/>
+        <bgTheme :top="customize_top"/>
     </section>
     <div class="dotlottie-container h-full w-full text-white z-20">
         <dotlottie-player 
@@ -38,7 +38,7 @@
             },
         data() {
             return {
-                animation: "",
+                customize_top: "top-[260px]" ,   
 
             }
         },

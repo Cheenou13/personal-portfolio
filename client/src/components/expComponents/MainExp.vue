@@ -1,19 +1,21 @@
 <template>
-        <div :id="experience" class=" experience-wrapper ">
-            main experience
-            <bgTheme />
+        <TextContents />
+        <div :id="experience" class="">
         </div>
+        <ExpDescription />
 </template>
 
 <script>
-    import bgTheme from '../reusables/bgTheme.vue';
+    import TextContents from './TextContents.vue';
+    import ExpDescription from './ExpDescription.vue';
     export default {
         name: "MainExp",
         props: {
             experience: String,
         },
         components: {
-            bgTheme
+            TextContents,
+            ExpDescription,
         },
         setup () {
             
@@ -25,11 +27,20 @@
 
 <style scoped>
 
-    .experience-wrapper {
+    /* .experience-wrapper {
         height: 471px;
         width: 1110px;
         left: calc(50% - 1110px/2);
         top: 2606px;
+        position: absolute;
+    } */
+
+    #experienceRef {
+        height: 25px;
+        width: 41px;
+        top: 2655px;
+        left: calc(50% - 41px / 2);
+        overflow: hidden;
         position: absolute;
     }
 

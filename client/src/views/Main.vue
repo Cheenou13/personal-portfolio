@@ -44,7 +44,7 @@
         methods: {
             checkScroll() {
                 const threshold = window.innerHeight * 0.10;  // 10% of viewport height
-                console.log("scroll Y: ", window.scrollY);
+                // console.log("scroll Y: ", window.scrollY);
                 if (window.scrollY > threshold) this.showFixedNavBar = true;
                 else this.showFixedNavBar = false;
             }

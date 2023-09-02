@@ -1,5 +1,5 @@
 <template>
-    <div class="container-bg">
+    <div class="container-bg" :class="myTop" >
         <div class="contents">
             <div class="h-full w-full opacity-100 overflow-hidden z-[-1] relative" style="background-color: rgb(18, 17, 32);">
                 <div class="bg-wrapper">
@@ -15,10 +15,16 @@
 <script>
 export default {
     name: "bgTheme",
-    setup () {
-        
-
-        return {}
+    props: {
+        top: String,
+    },
+    data () {
+        return {
+            myTop: this.top,
+        }
+    },
+    mounted () {
+        console.log(this.top)
     }
 }
 </script>
@@ -29,7 +35,6 @@ export default {
         height: 612px;
         width: 1440px;
         left: calc(50% - 1440px/2);
-        top: 260px;
         position: absolute;
     }
     .bg-wrapper {

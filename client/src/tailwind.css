@@ -17,4 +17,5 @@ body {
   font-size: 12px;
   scroll-behavior: smooth;
   background-color: #121120;  
+  --framer-aspect-ratio-supported: auto;
 }
