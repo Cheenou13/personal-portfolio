@@ -41,8 +41,8 @@
                     <div class="flex justify-start gap-4 h-full w-full opacity-100 overflow-hidden relative">
                         <div class="social-media-wrapper-linkedin">
                             <div class="contents">
-                                <a href="https://www.linkedin.com/in/cheenou-xiong-0a4639107/" target="_blank">
-                                    <div class="svg-container ">
+                                <a href="https://www.linkedin.com/in/cheenou-xiong-0a4639107/" class="a-tag" target="_blank">
+                                    <div class="svg-container-linkedin ">
                                         <div class="flex justify-center items-center w-full h-full ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin rounded-[0.2em]" viewBox="0 0 16 16">
                                                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
@@ -55,7 +55,7 @@
 
                         <div class="social-media-wrapper-github">
                             <div class="contents">
-                                <a href="https://github.com/Cheenou13" target="_blank">
+                                <a href="https://github.com/Cheenou13 " class="a-tag" target="_blank">
                                     <div class="svg-container-github ">
                                         <div class="flex justify-center items-center w-full h-full ">
                                             <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle fill-white">
@@ -179,28 +179,15 @@ export default {
     }
     .social-media-wrapper-linkedin {
         opacity: 1;
-        bottom: 0px;
-        top: 0px;
-        /* left: calc(49.387755102040835% - 48px / 2); */
         width: 48px;
-        /* position: absolute; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
     }
-    .social-media-wrapper-linkedin a {
-        background-color: rgba(18, 17, 32, 0);
-        height: 100%;
-        width: 100%;
-        border-radius: 6px;
-        cursor: pointer;
-        overflow: hidden;
-        text-decoration: none;
-        will-change: transform;
-        position: relative;
-    }
+
     .social-media-wrapper-github {
         opacity: 1;
-        /* bottom: 0px;
-        top: 0px; */
-        /* left: calc(49.387755102040835% - 578px / 2); */
         width: 48px;
         display: flex;
         justify-content: center;
@@ -217,15 +204,27 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: opacity 0.4s ease 0s;
     }
-    .svg-container {
+    .svg-container-linkedin {
         image-rendering: pixelated;
         opacity: 0.5;
         height: 22px;
         width: 22px;
-        left: calc(50% - 22px/2);
-        top: calc(50% - 22px/2);
-        position: absolute;
-        /* background-color: white; */
+        /* left: calc(50% - 22px/2);
+        top: calc(50% - 22px/2); */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.4s ease 0s;
+    }
+    .a-tag:hover {
+        border-radius: 8px;
+        background-color: rgb(32, 31, 48);
+        padding: 1rem;
+    }
+    .a-tag:hover .svg-container-github, .a-tag:hover .svg-container-linkedin {
+        opacity: 1;
     }
 </style>
