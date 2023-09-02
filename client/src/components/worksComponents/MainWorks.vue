@@ -1,8 +1,8 @@
 <template>
     <div class="years-exp-container">
         <div class="year-exp">
-            <p class="years-contents">Over two years, I've designed and developed robust full-stack C# and Vue.js applications, 
-                collaborated seamlessly with UX teams, and implemented cutting-edge microservices and APIs, driving business growth and enhancing user experiences.</p>
+            <p class="years-contents">Over two years, I've designed and developed robust software/web applications, 
+            and implemented cutting-edge microservices and APIs, driving business growth and enhancing user experiences.</p>
         </div>
         <div class="products-description">
             <p>Creating Responsive, Scalable, adaptable and high quality software products that produce efficient results.</p>
