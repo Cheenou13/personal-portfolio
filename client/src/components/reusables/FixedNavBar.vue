@@ -87,11 +87,6 @@ export default {
         skills: String,
         showBar: Boolean,
     },
-    setup () {
-        
-
-        return {}
-    },
     data () {
         return {
             archor_tag: "a-tag",
