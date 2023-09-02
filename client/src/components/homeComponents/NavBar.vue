@@ -38,7 +38,7 @@
             <div class="absolute h-[54px] w-[50%] left-0 ">
 
                 <div class="contents">
-                    <div class="flex justify-start gap-4 h-full w-full opacity-100 overflow-hidden relative">
+                    <div class="flex justify-start gap-4 h-full w-full opacity-100 overflow-hidden relative mx-4">
                         <div class="social-media-wrapper-linkedin">
                             <div class="contents">
                                 <a href="https://www.linkedin.com/in/cheenou-xiong-0a4639107/" class="a-tag" target="_blank">
@@ -183,7 +183,6 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 1rem;
     }
 
     .social-media-wrapper-github {
