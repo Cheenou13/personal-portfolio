@@ -5,7 +5,7 @@
             <p>UI/UX implementation, System Design, Database Optimazation, and Algorithm Analysis</p>
         </div>
         <div class="exp-intro-container">
-            <p>Experienced Both Frontend and Backend development</p>
+            <p>Experienced Both Frontend and Backend development </p>
         </div>
     </div>
 </template>
