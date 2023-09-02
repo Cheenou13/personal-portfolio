@@ -2,7 +2,7 @@
 
     <div class="social-media-wrapper">
         <div class="contents">
-            <a :href="url" :class="className" target="_blank">
+            <a :href="url" :class="styleTag" target="_blank">
                 <div class="svg-container">
                     <div class="flex justify-center items-center w-full h-full ">
                         <slot></slot>
@@ -19,7 +19,7 @@ export default {
     name: "SocialMedia",
     props: {
         url: String,
-        className: String,
+        styleTag: String,
     },
     setup () {
         
@@ -29,7 +29,7 @@ export default {
     data () {
         return {
             url: this.url,
-            className: this.className,
+            className: this.styleTag,
         }
     }
 
@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 
-.social-media-wrapper {
+    .social-media-wrapper {
         opacity: 1;
         width: 48px;
         display: flex;
