@@ -2,7 +2,7 @@
     <div class="not-found">
       <h1>404</h1>
       <p>Oops! The page you are looking for does not exist.</p>
-      <router-link to="/" @click="goBack" class=" hover:bg-violet-600 bg-violet-400 transform-cpu p-3 rounded shadow-lg transition-all">Go back to home</router-link>
+      <div @click="goBack" class="router-link hover:bg-blue-600 bg-blue-800 transform-cpu p-3 rounded shadow-lg transition-all">Go back</div>
     </div>
   </template>
   
@@ -41,10 +41,9 @@
     margin-bottom: 20px;
   }
   
-  router-link {
+  .router-link {
+    cursor: pointer;
     text-decoration: none;
-    color: #3498db;
-    border: 1px solid #3498db;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.2s;
