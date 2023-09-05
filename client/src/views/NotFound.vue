@@ -2,7 +2,7 @@
     <div class="not-found">
       <h1>404</h1>
       <p>Oops! The page you are looking for does not exist.</p>
-      <router-link to="/">Go back to home</router-link>
+      <router-link to="/" class=" hover:bg-violet-600 bg-violet-400 transform-cpu p-3 rounded shadow-lg transition-all">Go back to home</router-link>
     </div>
   </template>
   
@@ -12,7 +12,7 @@
   }
   </script>
   
-  <style lang="scss" scoped>
+  <style  scoped>
   .not-found {
     display: flex;
     flex-direction: column;
@@ -40,10 +40,6 @@
     border-radius: 5px;
     transition: background-color 0.2s;
   
-    &:hover {
-      background-color: #3498db;
-      color: #fff;
-    }
   }
   </style>
   
