@@ -12,7 +12,7 @@
   }
   </script>
   
-  <style scoped>
+  <style lang="scss" scoped>
   .not-found {
     display: flex;
     flex-direction: column;
