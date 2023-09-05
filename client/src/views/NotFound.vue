@@ -2,13 +2,22 @@
     <div class="not-found">
       <h1>404</h1>
       <p>Oops! The page you are looking for does not exist.</p>
-      <router-link to="/" class=" hover:bg-violet-600 bg-violet-400 transform-cpu p-3 rounded shadow-lg transition-all">Go back to home</router-link>
+      <router-link to="/" @click="goBack" class=" hover:bg-violet-600 bg-violet-400 transform-cpu p-3 rounded shadow-lg transition-all">Go back to home</router-link>
     </div>
   </template>
   
   <script>
   export default {
-    name: 'NotFound'
+    name: 'NotFound',
+    methods: {
+      goBack() {
+        // If the tab has a history (meaning it wasn't just opened to this page)
+        // navigate back in history
+        if (window.history.length > 1) this.$router.go(-1);
+        // If there's no history, attempt to close the tab
+        else window.close();
+      },
+    },
   }
   </script>
   
