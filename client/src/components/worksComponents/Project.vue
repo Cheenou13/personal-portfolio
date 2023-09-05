@@ -1,52 +1,73 @@
 <template>
-    <div class=" rounded-[8px] transform-none inset-0 overflow-visible absolute" style="transform-origin: 50% 50% 0px;">
-        <div class="bg-placeholder"></div>
-        <a class="anchor" href="https://3d-manufacturing.netlify.app/" target="_blank">
-            <div class="absolute pointer-events-none user-select-none top-0 right-0 left-0 bottom-0" style="border-radius: inherit;">
-                <div class="contents pointer-events-none" style="border-radius: inherit;">
-                    <img src="../../assets/imgs/3D.jpg" alt="first project">
-                    
+    <div class="items-container">
+        <div class=" inset-0 absolute">
+            <div class="contents">
+                <div class="contents-container">
+                    <!--  -->
+                    <div class=" rounded-[8px] transform-none inset-0 overflow-visible absolute" style="transform-origin: 50% 50% 0px;">
+                        <div class="bg-placeholder"></div>
+                        <a class="anchor bg-slate-50"  :href="netlify" target="_blank">
+                            <div class="flex justify-center items-center absolute pointer-events-none user-select-none top-0 right-0 left-0 bottom-0" style="border-radius: inherit;">
+                                <div class="contents pointer-events-none" style="border-radius: inherit;">
+                                    <img v-if="isFinshed" :src='projectcontent' alt="first project">
+                                    <p class="text-[#000] text-[18px] font-semibold" v-else>{{ projectcontent }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="outline-none flex flex-col justify-start transform-none opacity-100 bottom-[40px] left-[68px] whitespace-pre-wrap w-auto absolute" 
+                        style="transform-origin: 50% 50% 0px; word-break: break-word; word-wrap: break-word; color: rgb(245, 245, 245);">
+                        <p class="project-title">{{ title }}</p>
+                    </div>
+                    <div class="project-description">
+                        <a class="github-link" :href="gitHub" target="_blank">Github</a>
+                    </div>
+                    <div class="logo-container">
+                        <div class=" pointer-events-none user-select-none top-0 left-0 right-0 bottom-0" style="border-radius: inherit;">
+                            <div class="contents pointer-events-none" style="border-radius: inherit;">
+                                <div class="rounded-full bg-slate-50 flex justify-center items-center place-content-center">
+                                    <slot></slot>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
                 </div>
-            </div>
-        </a>
-    </div>
-    <div class="outline-none flex flex-col justify-start transform-none opacity-100 bottom-[40px] left-[68px] whitespace-pre-wrap w-auto absolute" 
-        style="transform-origin: 50% 50% 0px; word-break: break-word; word-wrap: break-word; color: rgb(245, 245, 245);">
-        <p class="project-title">3D Manufacturing Lines</p>
-    </div>
-    <div class="project-description">
-        <a class="github-link" href="https://github.com/Cheenou13/3D-rendering" target="_blank">Github</a>
-    </div>
-    <div class="logo-container">
-        <div class=" pointer-events-none user-select-none top-0 left-0 right-0 bottom-0" style="border-radius: inherit;">
-            <div class="contents pointer-events-none" style="border-radius: inherit;">
-                <!-- <?xml version="1.0" encoding="UTF-8"?> -->
-                <div class="rounded-full bg-slate-50 flex justify-center items-center place-content-center">
-                    <svg fill="none" stroke-linecap="square" stroke-miterlimit="10" version="1.1" viewBox="0 0 226.77 226.77" xmlns="http://www.w3.org/2000/svg">
-                    <g transform="translate(8.964 4.2527)" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4">
-                    <path d="m63.02 200.61-43.213-174.94 173.23 49.874z"/>
-                    <path d="m106.39 50.612 21.591 87.496-86.567-24.945z"/>
-                    <path d="m84.91 125.03-10.724-43.465 43.008 12.346z"/>
-                    <path d="m63.458 38.153 10.724 43.465-43.008-12.346z"/>
-                    <path d="m149.47 62.93 10.724 43.465-43.008-12.346z"/>
-                    <path d="m84.915 125.06 10.724 43.465-43.008-12.346z"/>
-                    </g>
-                    </svg>
-                </div>
-                
             </div>
         </div>
     </div>
+
 </template>
 
 <script>
+
+
 export default {
     name: "Project",
+    props: {
+        gitHub: String,
+        title: String,
+        netlify: String,
+        isFinshed: Boolean,
+        projectcontent: String,
+    },
     setup () {
         
 
-        return {}
-    }
+        return {
+
+        }
+    },
+    data() {
+        return {
+            // gitHub: this.gitHub,
+            test_gitHub: "https://github.com/Cheenou13/3D-rendering",
+            test_title: "3D Manufacturing Lines",
+            test_netlify: "https://3d-manufacturing.netlify.app/",
+            test_isFinshed: true,
+            test_projectContent: "imgSrc"
+        }
+    },
 }
 </script>
 
@@ -128,7 +149,7 @@ export default {
         border-radius: inherit;
         object-position: center;
         object-fit: cover;
-        image-rendering: auto;
+        /* image-rendering: auto; */
     }
     .project-title {
         /* --font-selector: SW50ZXItU2VtaUJvbGQ=; */
@@ -138,5 +159,35 @@ export default {
         color: rgb(245, 245, 245);
         font-size: calc(var(--framer-font-size, 16px) * var(--framer-font-size-scale, 1));
     }
+
+    .items-container {
+        opacity: 1;
+        transform: none;
+        align-self: start;
+        justify-self: start;
+        height: 399px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease 0s;
+
+    }
+    .contents-container {
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+        transform: none;
+        transform-origin: 50% 50% 0px;
+        overflow: visible;
+        position: relative;
+    }
+    .items-container:hover{
+        transform: scale(1.02);
+        
+    }
+    .items-container:hover .github-link {
+        color: rgba(0, 103, 246, 1);
+    }
+
 
 </style>
