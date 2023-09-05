@@ -6,7 +6,7 @@
                     <!--  -->
                     <div class=" rounded-[8px] transform-none inset-0 overflow-visible absolute" style="transform-origin: 50% 50% 0px;">
                         <div class="bg-placeholder"></div>
-                        <a class="anchor bg-slate-50"  :href="netlify" target="_blank">
+                        <a class="anchor bg-slate-50"  :href="isFinshed ? netlify: '/not-found'" target="_blank">
                             <div class="flex justify-center items-center absolute pointer-events-none user-select-none top-0 right-0 left-0 bottom-0" style="border-radius: inherit;">
                                 <div class="contents pointer-events-none" style="border-radius: inherit;">
                                     <img v-if="isFinshed" :src='projectcontent' alt="first project">
@@ -43,7 +43,6 @@
 
 
 export default {
-    name: "Project",
     props: {
         gitHub: String,
         title: String,

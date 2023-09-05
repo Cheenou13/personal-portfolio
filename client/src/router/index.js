@@ -1,5 +1,6 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import Main from '../views/Main.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
     {
@@ -7,11 +8,11 @@ const routes = [
         name: 'Home',
         component: Main
     },
-    // {
-    //     path: '/dashboard',
-    //     name: 'DashBoardPage',
-    //     component: DashBoardPage
-    // }
+    {
+        path: '/not-found',
+        name: 'NotFound',
+        component: NotFound
+    }
 ]
 
 const router = createRouter({
